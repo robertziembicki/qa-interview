@@ -33,6 +33,38 @@
 			<artifactId>selenium-firefox-driver</artifactId>
 			<version>2.46.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.webdriverextensions</groupId>
+			<artifactId>webdriverextensions</artifactId>
+			<version>1.2.1</version>
+		</dependency>
 	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>com.github.webdriverextensions</groupId>
+					<artifactId>webdriverextensions-maven-plugin</artifactId>
+					<version>1.0.1</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>install-drivers</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<drivers>
+							<driver>
+								<name>chromedriver</name>
+								<version>2.16</version>
+							</driver>
+						</drivers>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 </project>
