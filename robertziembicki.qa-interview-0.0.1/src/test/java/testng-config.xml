@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="QA Interview" parallel="false" verbose="1">
-<!--
+
+<!-- 
+TestNG configuration file. 
+This file is configured to run test scenario 1 (log in) and 2 (add video file)
+on both web browsers (firefox and chrome) sequentially. 
+-->
+
+<!-- Test scenario 1 (Log in) configuration -->
   <test name="LoginTest_ff">
   	<parameter name="browserName" value="firefox"></parameter>
   	<parameter name="version" value="39.0"></parameter>
@@ -18,7 +25,8 @@
       <class name="org.robertziembicki.qa.LoginTestScenario"/>
     </classes>
   </test>
--->
+
+<!-- Test scenario 2 (Add video file) configuration -->
   <test name="AddVideoTest_ff">
     <parameter name="browserName" value="firefox"></parameter>
   	<parameter name="version" value="39.0"></parameter>
