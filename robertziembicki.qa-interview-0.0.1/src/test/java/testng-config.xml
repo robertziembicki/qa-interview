@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="QA Interview" parallel="false" verbose="1">
-  
+<!--
   <test name="LoginTest_ff">
   	<parameter name="browserName" value="firefox"></parameter>
   	<parameter name="version" value="39.0"></parameter>
@@ -18,7 +18,7 @@
       <class name="org.robertziembicki.qa.LoginTestScenario"/>
     </classes>
   </test>
-<!-- 
+-->
   <test name="AddVideoTest_ff">
     <parameter name="browserName" value="firefox"></parameter>
   	<parameter name="version" value="39.0"></parameter>
@@ -36,5 +36,5 @@
       <class name="org.robertziembicki.qa.AddVideoTestScenario"/>
     </classes>
   </test>
--->
+
 </suite>

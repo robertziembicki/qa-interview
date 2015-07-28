@@ -62,7 +62,8 @@ public class LoginTestScenario {
 		Thread.sleep(10000);
 		
 		webDriver.findElement(By.id("usernameInput")).sendKeys("robertziembicki");
-	    webDriver.findElement(By.id("passwordInput")).sendKeys("interview");     
+	    webDriver.findElement(By.id("passwordInput")).sendKeys("interview");  
+	    Thread.sleep(4000);
 	    webDriver.findElement(By.className("login-button")).click();
 	    
 	    Thread.sleep(10000);
@@ -75,7 +76,7 @@ public class LoginTestScenario {
 		webDriver.navigate().to("http://qm-homework.wikia.com");
 		assertEquals(webDriver.getCurrentUrl(),"http://qm-homework.wikia.com/wiki/QM_HomeWork_Wikia");
 		
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		
 		Actions actions = new Actions(webDriver);
 		WebElement signInLabel = webDriver.findElement(By.id("AccountNavigation"));
@@ -87,8 +88,10 @@ public class LoginTestScenario {
 	    webDriver.findElement(By.id("passwordInput")).sendKeys("wrongPassword");     
 	    webDriver.findElement(By.className("login-button")).click();
 	    
-	    Thread.sleep(5000);
-	    assertTrue(webDriver.getCurrentUrl().endsWith("Special:UserLogin"));
+	    Thread.sleep(10000);
+	    /*assertEquals(webDriver.findElement(By.name("username")).getAttribute("value"),"robertziembicki".toString());
+	    assertEquals(webDriver.findElement(By.name("password")).getAttribute("value"),"wrongPassword".toString());
+	    */
 	}
 	
 	@AfterMethod
