@@ -22,6 +22,7 @@ mvn install
 ### Run shell scripts
 chromedriver-installer.sh
 selenium-server-hub-start.sh
+
 selenium-server-node-chrome-start.sh
 selenium-server-node-firefox-start.sh
 
