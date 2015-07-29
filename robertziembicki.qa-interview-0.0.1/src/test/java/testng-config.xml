@@ -8,15 +8,6 @@ on both web browsers (firefox and chrome) sequentially.
 -->
 
 <!-- Test scenario 1 (Log in) configuration -->
-  <test name="LoginTest_ff">
-  	<parameter name="browserName" value="firefox"></parameter>
-  	<parameter name="version" value="39.0"></parameter>
-  	<parameter name="platform" value="MAC"></parameter>
-    <classes>
-      <class name="org.robertziembicki.qa.LoginTestScenario"/>
-    </classes>
-  </test>
-  
   <test name="LoginTest_chrome">
   	<parameter name="browserName" value="chrome"></parameter>
   	<parameter name="version" value="43.0.2357.134"></parameter>
@@ -25,20 +16,29 @@ on both web browsers (firefox and chrome) sequentially.
       <class name="org.robertziembicki.qa.LoginTestScenario"/>
     </classes>
   </test>
+  
+  <test name="LoginTest_ff">
+  	<parameter name="browserName" value="firefox"></parameter>
+  	<parameter name="version" value="39.0"></parameter>
+  	<parameter name="platform" value="MAC"></parameter>
+    <classes>
+      <class name="org.robertziembicki.qa.LoginTestScenario"/>
+    </classes>
+  </test>
 
 <!-- Test scenario 2 (Add video file) configuration -->
-  <test name="AddVideoTest_ff">
-    <parameter name="browserName" value="firefox"></parameter>
-  	<parameter name="version" value="39.0"></parameter>
+  <test name="AddVideoTest_chrome">
+    <parameter name="browserName" value="chrome"></parameter>
+  	<parameter name="version" value="43.0.2357.134"></parameter>
   	<parameter name="platform" value="MAC"></parameter>
     <classes>
       <class name="org.robertziembicki.qa.AddVideoTestScenario"/>
     </classes>
   </test>
-
-  <test name="AddVideoTest_chrome">
-    <parameter name="browserName" value="chrome"></parameter>
-  	<parameter name="version" value="43.0.2357.134"></parameter>
+  
+  <test name="AddVideoTest_ff">
+    <parameter name="browserName" value="firefox"></parameter>
+  	<parameter name="version" value="39.0"></parameter>
   	<parameter name="platform" value="MAC"></parameter>
     <classes>
       <class name="org.robertziembicki.qa.AddVideoTestScenario"/>
