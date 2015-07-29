@@ -53,10 +53,12 @@ public class LoginTestScenario {
 		} else {
 			desiredCapabilities = DesiredCapabilities.firefox();
 		}
+		
 		/*
 		 * Platform parameter value set for the browser.
 		 */
 		desiredCapabilities.setCapability("platform", platform);
+		
 		/*
 		 * Version of the browser set.
 		 */
