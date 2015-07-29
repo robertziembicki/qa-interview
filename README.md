@@ -35,6 +35,10 @@ mvn install
 
 This command also builds the whole application code, runs all tests (using testng-config.xml file) and generates surfire-report (see /target folder).
 
+To run selenium test only, please use the following command:
+
+mvn test
+
 ### Run tests manually
-If you want to run selenium tests manually (not using maven), please checkout the project from github repository, download and install all required libraries (mvn install).
+If you want to run selenium tests manually (not using maven), please checkout the project from github repository to your local development environment (e.g. Eclipse), download and install all required libraries (mvn install).
 Then run selenium tests from testNG configuration file testng-config.xml, which is located in /src/test/java folder.
