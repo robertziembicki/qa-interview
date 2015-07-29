@@ -16,6 +16,6 @@ This proejct repository was created to implement a solution for QA Interview tas
 ### Download selenium standalone server jar file
 ### Install maven libraries
 ### Run shell scripts
-$ Roberts-Air:scripts Robert$ ./selenium-server-node-firefox-start.sh
-$ Roberts-Air:scripts Robert$ ./selenium-server-node-chrome-start.sh
+$Roberts-Air:scripts Robert$ ./selenium-server-node-firefox-start.sh
+$Roberts-Air:scripts Robert$ ./selenium-server-node-chrome-start.sh
 
