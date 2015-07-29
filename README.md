@@ -12,3 +12,8 @@ This proejct repository was created to implement a solution for QA Interview tas
 * Platform: MacOS;
 * Browsers: Firefox (ver. 39.0) and Google Chrome (ver. 43.0.2357.134).
 
+## Before running selenium tests
+### Run 1
+### Run 2
+### Run 3
+
